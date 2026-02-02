@@ -97,20 +97,10 @@ resource "azurerm_linux_virtual_machine" "vm" {
     storage_account_type = "Premium_LRS"
   }
 
-  # ---- AQUI INSTALA PYTHON 3.10 ----
-  custom_data = <<-EOF
-    #!/bin/bash
-    apt update
-    apt install -y software-properties-common
-    add-apt-repository -y ppa:deadsnakes/ppa
-    apt update
-    apt install -y python3.10 python3.10-venv python3.10-dev
-  EOF
-
   source_image_reference {
     publisher = "Canonical"
-    offer     = "0001-com-ubuntu-server-focal"       # Oferta oficial Ubuntu
-    sku       = "20_04-lts-gen2"     # SKU para Ubuntu 22.04 LTS
+    offer     = "0001-com-ubuntu-server-jammy"       # Oferta oficial Ubuntu
+    sku       = "22_04-lts-gen2"     # SKU para Ubuntu 22.04 LTS
     version   = "latest"             # sempre pegar a versão mais recente
 }
 }
