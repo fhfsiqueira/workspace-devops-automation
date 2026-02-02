@@ -2,6 +2,8 @@
 - name: Instalar Docker no Ubuntu
   hosts: vm
   become: yes
+  vars:
+    ansible_python_interpreter: /usr/bin/python3.10  # ou 3.9 se você instalou
   tasks:
     - name: Instalar dependências
       apt:
