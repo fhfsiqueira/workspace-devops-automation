@@ -103,4 +103,3 @@ resource "azurerm_linux_virtual_machine" "vm" {
     sku       = "22_04-lts-gen2"     # SKU para Ubuntu 22.04 LTS
     version   = "latest"             # sempre pegar a versão mais recente
 }
-}
