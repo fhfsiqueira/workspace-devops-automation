@@ -1,0 +1,48 @@
+# Arquivos de Sistema Operacional
+.DS_Store
+Thumbs.db
+
+# Logs e arquivos temporários
+*.log
+*.tmp
+*.bak
+*.swp
+
+# Arquivos gerados em tempo de execução
+ec2_instance_id.txt
+ec2_public_ip.txt
+
+# Ferramentas de Build e Dependências (Maven/Gradle)
+target/
+.mvn/
+build/
+dist/
+out/
+
+# Arquivos de IDE
+.idea/
+*.iml
+*.iws
+*.ipr
+.classpath
+.project
+.settings
+.factorypath
+.springBeans
+.sts4-cache
+nbproject/
+.nb-gradle/
+
+# VSCode
+.vscode/
+
+# Arquivos sensíveis (adicionar padrões conforme necessário)
+*.pem
+*.key
+*.env
+application-local.properties
+
+# Coleções e ambientes do Postman (considerar se devem ser versionados)
+# Se forem específicos do usuário, devem ser ignorados.
+# DevOps-Automation-API.postman_collection.json
+# DevOps-Automation-API.postman_environment.json
